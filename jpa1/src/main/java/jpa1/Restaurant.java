@@ -142,7 +142,8 @@ public class Restaurant {
              int sum = 0;
              for (int i = 0; i < list.size(); i++) {
                  Menu m = list.get(i);
-                 if((sum + m.getWeight()) > 1000 )
+                 sum = sum + m.getWeight();
+                 if(sum < 1000 )
                      listSum.add(m);
                  else
                      break;
