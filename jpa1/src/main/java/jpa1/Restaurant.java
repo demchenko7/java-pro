@@ -64,7 +64,7 @@ public class Restaurant {
 
         System.out.print("Enter dish weight(g): ");
         String sWeight = sc.nextLine();
-        if(sWeight.endsWith("%")) sWeight = sWeight.substring(0,sWeight.length() - 1).trim();
+        if(sWeight.endsWith("g")) sWeight = sWeight.substring(0,sWeight.length() - 1).trim();
         int weight = Integer.parseInt(sWeight);
 
         System.out.print("Enter dish discount(%): ");
