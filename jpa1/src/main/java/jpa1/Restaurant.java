@@ -169,8 +169,8 @@ public class Restaurant {
                 "SELECT v FROM Menu v", Menu.class);
         List<Menu> list = (List<Menu>) query.getResultList();
 
-        for (Menu c : list)
-            System.out.println(c);
+        for (Menu m : list)
+            System.out.println(m);
     }
 
 
